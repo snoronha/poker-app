@@ -47,21 +47,71 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <YouTube videoId="2g811Eo7K8U" opts={opts} ref={playerRef} onReady={_onReady} />;
+    <div class="flex flex-row">
+      <div class="w-4/5 ml-10 mt-10">
+        <YouTube videoId="2g811Eo7K8U" opts={opts} ref={playerRef} onReady={_onReady} />
       </div>
+      <div class="w-1/5 flex flex-col ml-10 mt-10 mb-10 items-start">
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+        <div class="ml-4"><b>Wager Amount</b></div>
+        <div class="ml-4 mt-4"><b>$</b> __________</div>
+
+        <div class="ml-4 mt-4">
+          <span>Player A</span>
+          <span class="ml-4">
+            <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+              BET
+            </button>
+          </span>
+        </div>
+
+        <div class="ml-4 mt-4">
+          <span>Player B</span>
+          <span class="ml-4">
+            <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+              +240
+            </button>
+          </span>
+        </div>
+
+        <div class="ml-4 mt-4">
+          <span>Player C</span>
+          <span class="ml-4">
+            <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+              28%
+            </button>
+          </span>
+        </div>
+
+        <div class="ml-4 mt-4">
+          <span>Player D</span>
+          <span class="ml-4">
+            <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+              5/2
+            </button>
+          </span>
+        </div>
+
+        <div class="ml-4 mt-4">
+          <span>Player E</span>
+          <span class="ml-4">
+            <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+              2.4x
+            </button>
+          </span>
+        </div>
+
+
+        <div class="ml-4 mt-4">
+          <span>Player F</span>
+          <span class="ml-4">
+            <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+              BET
+            </button>
+          </span>
+        </div>
+
       </div>
-    </main>
+    </div>
   )
 }
